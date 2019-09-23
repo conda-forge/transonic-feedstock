@@ -1,5 +1,5 @@
 {% set name = "transonic" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e2bf59b1c683101f58a568ed1444bce78d29253c3f95fc5ed1d3ac64151c8a42
+  sha256: cf5bc4845b948b38ac4f8ab6417ed63f77d950398a1fe79cfe3c3b765133254f
 
 build:
   number: 0
@@ -23,8 +23,8 @@ requirements:
   run:
     - python >=3.6
     - astunparse
-    - beniget
-    - gast >=0.2.2
+    - beniget ==0.1.0
+    - gast ==0.2.2
     - numpy
 
 test:
