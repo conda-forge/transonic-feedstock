@@ -26,6 +26,7 @@ requirements:
     - beniget ==0.1.0
     - gast ==0.2.2
     - numpy
+    - autopep8
 
 test:
   imports:
