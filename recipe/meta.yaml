@@ -10,7 +10,7 @@ source:
   sha256: e929a62fbb4d380212d4735c599e0adf20d6a4334200f508c66b29cb1fda336e
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - transonic = transonic.run:run
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
@@ -23,8 +23,8 @@ requirements:
   run:
     - python >=3.6
     - astunparse
-    - beniget ==0.1.0
-    - gast ==0.2.2
+    - beniget
+    - gast
     - numpy
     - autopep8
 
@@ -41,7 +41,7 @@ about:
   home: https://bitbucket.org/fluiddyn/transonic
   license: CeCILL-B
   license_family: OTHER
-  license_file: LICENSE.txt 
+  license_file: LICENSE.txt
   summary: Make your Python code fly at transonic speeds!
   description: |
     Transonic is a pure Python package (requiring Python >= 3.6) to easily
@@ -51,7 +51,7 @@ about:
     The accelerators are not hard dependencies of Transonic; Python codes
     using Transonic run fine without any accelerators installed (of course
     without speedup)!
-  doc_url: https://transonic.readthedocs.io 
+  doc_url: https://transonic.readthedocs.io
 
 extra:
   recipe-maintainers:
