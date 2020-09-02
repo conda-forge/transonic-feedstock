@@ -5,7 +5,7 @@ Home: https://bitbucket.org/fluiddyn/transonic
 
 Package license: CeCILL-B
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Make your Python code fly at transonic speeds!
 
