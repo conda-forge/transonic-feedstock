@@ -38,8 +38,8 @@ test:
     - transonic --help
 
 about:
-  home: https://bitbucket.org/fluiddyn/transonic
-  license: CeCILL-B
+  home: https://foss.heptapod.net/fluiddyn/transonic/
+  license: BSD-3-Clause
   license_family: OTHER
   license_file: LICENSE.txt
   summary: Make your Python code fly at transonic speeds!
