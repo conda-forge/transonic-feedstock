@@ -1,9 +1,9 @@
 About transonic
 ===============
 
-Home: https://bitbucket.org/fluiddyn/transonic
+Home: https://foss.heptapod.net/fluiddyn/transonic/
 
-Package license: CeCILL-B
+Package license: BSD-3-Clause
 
 Feedstock license: BSD-3-Clause
 
