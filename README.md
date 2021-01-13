@@ -5,9 +5,11 @@ Home: https://foss.heptapod.net/fluiddyn/transonic/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/transonic-feedstock/blob/master/LICENSE.txt)
 
 Summary: Make your Python code fly at transonic speeds!
+
+Documentation: https://transonic.readthedocs.io
 
 Transonic is a pure Python package (requiring Python >= 3.6) to easily
 accelerate modern Python-Numpy code with different accelerators (like
