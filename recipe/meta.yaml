@@ -22,7 +22,7 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - astunparse
+    - astunparse  # [py<39]
     - beniget
     - gast
     - numpy
