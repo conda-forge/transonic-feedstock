@@ -11,6 +11,7 @@ source:
 
 build:
   number: 0
+  skip: true  # [py<36]
   entry_points:
     - transonic = transonic.run:run
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
@@ -18,9 +19,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
   run:
-    - python >=3.6
+    - python
     - astunparse  # [py<39]
     - beniget
     - gast
