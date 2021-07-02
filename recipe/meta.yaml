@@ -1,5 +1,5 @@
 {% set name = "transonic" %}
-{% set version = "0.4.8" %}
+{% set version = "0.4.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: df0aa0a8669cd5967071c7bf3513524b399bb9103cd70e045ca74564645dc1de
+  sha256: c340725c2e3f3d6698951bc46a809544cbbf8d61d0a1a89bdd95a0640636ad5b
 
 build:
   number: 0
