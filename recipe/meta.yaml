@@ -10,7 +10,7 @@ source:
   sha256: df34997a57c0e7d0dd72821f115dc56c3ae06c75616e162829727324de1ebc04
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
   entry_points:
     - transonic = transonic.run:run
