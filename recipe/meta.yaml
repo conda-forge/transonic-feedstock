@@ -1,5 +1,5 @@
 {% set name = "transonic" %}
-{% set version = "0.5.3" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,26 +7,24 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3b5b8e5422f779e27493059d323c3b3aa2f19ede5ce6eead5000687b2030e0d9
+  sha256: 11847dd533ee18de46abfa6767f3dd762e47e5075a19d243bdd86c9bee3312a6
 
 build:
   number: 0
   noarch: python
   entry_points:
     - transonic = transonic.run:run
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv'
 
 requirements:
   host:
+    - python >=3.9
     - pip
-    - python >=3.7
+    - pdm-backend
   run:
-    - python >=3.7
-    # astunparse is actually only needed for py<39 but astunparse is added for
-    # all versions to be noarch
-    - astunparse
-    - beniget
-    - gast
+    - python >=3.9
+    - beniget ~=0.4.0
+    - gast ~=0.5.0
     - numpy
     - autopep8
 
@@ -46,7 +44,7 @@ about:
   license_file: LICENSE.txt
   summary: Make your Python code fly at transonic speeds!
   description: |
-    Transonic is a pure Python package (requiring Python >= 3.6) to easily
+    Transonic is a pure Python package (requiring Python >= 3.9) to easily
     accelerate modern Python-Numpy code with different accelerators (like
     Cython, Pythran, Numba, Cupy, PyTorch, Uarray, etc) opportunistically
     (i.e. if/when they are available).
