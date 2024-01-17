@@ -14,19 +14,17 @@ build:
   noarch: python
   entry_points:
     - transonic = transonic.run:run
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv'
 
 requirements:
   host:
+    - python >=3.9
     - pip
-    - python >=3.7
+    - pdm-backend
   run:
-    - python >=3.7
-    # astunparse is actually only needed for py<39 but astunparse is added for
-    # all versions to be noarch
-    - astunparse
-    - beniget
-    - gast
+    - python >=3.9
+    - beniget ~=0.4.0
+    - gast ~=0.5.0
     - numpy
     - autopep8
 
@@ -46,7 +44,7 @@ about:
   license_file: LICENSE.txt
   summary: Make your Python code fly at transonic speeds!
   description: |
-    Transonic is a pure Python package (requiring Python >= 3.6) to easily
+    Transonic is a pure Python package (requiring Python >= 3.9) to easily
     accelerate modern Python-Numpy code with different accelerators (like
     Cython, Pythran, Numba, Cupy, PyTorch, Uarray, etc) opportunistically
     (i.e. if/when they are available).
