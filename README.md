@@ -11,7 +11,7 @@ Summary: Make your Python code fly at transonic speeds!
 
 Documentation: https://transonic.readthedocs.io
 
-Transonic is a pure Python package (requiring Python >= 3.6) to easily
+Transonic is a pure Python package (requiring Python >= 3.9) to easily
 accelerate modern Python-Numpy code with different accelerators (like
 Cython, Pythran, Numba, Cupy, PyTorch, Uarray, etc) opportunistically
 (i.e. if/when they are available).
