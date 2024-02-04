@@ -10,10 +10,11 @@ source:
   sha256: d403bc337cbd1d832eba64b186118b34c0b39f231507f08b544a447f4cfcf833
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - transonic = transonic.run:run
+    - transonic-get-include = transonic_cl.get_includes:main
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv'
 
 requirements:
