@@ -24,8 +24,9 @@ requirements:
     - pdm-backend
   run:
     - python >={{ python_min }}
-    - beniget ~=0.4.0
-    - gast ~=0.5.0
+    - beniget ~=0.4.2
+    # this should be ~=0.6.0 but waiting for https://github.com/conda-forge/gast-feedstock/pull/18
+    - gast ~=0.5.5
     - numpy
     - autopep8
 
