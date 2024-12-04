@@ -25,8 +25,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - beniget ~=0.4.2
-    # this should be ~=0.6.0 but waiting for https://github.com/conda-forge/gast-feedstock/pull/18
-    - gast ~=0.5.5
+    - gast >=0.5.4,<0.7.0
     - numpy
     - autopep8
 
