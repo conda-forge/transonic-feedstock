@@ -1,14 +1,14 @@
 {% set name = "transonic" %}
-{% set version = "0.8.0" %}
-{% set python_min = "3.11" %}
+{% set version = "0.8.1" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1204c297da5a6e1700efc04d007143477ef29eb7b6ec8049fb90dfd59490f64e
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: dcd4e1a9ad14baa6f910da5bfc382d784d8b70652be952d3f4232ad98bd53c52
 
 build:
   number: 0
@@ -25,8 +25,8 @@ requirements:
     - pdm-backend
   run:
     - python >={{ python_min }}
-    - beniget ~=0.4.2
-    - gast ~=0.6.0
+    - beniget ~=0.5.0
+    - gast ~=0.7.0
     - numpy
     - autopep8
 
