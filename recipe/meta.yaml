@@ -1,6 +1,6 @@
 {% set name = "transonic" %}
 {% set version = "0.8.1" %}
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -25,8 +25,8 @@ requirements:
     - pdm-backend
   run:
     - python >={{ python_min }}
-    - beniget ~=0.4.2
-    - gast ~=0.6.0
+    - beniget ~=0.5.0
+    - gast ~=0.7.0
     - numpy
     - autopep8
 
